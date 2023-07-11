@@ -90,7 +90,7 @@ public class ChargingStation {
                 costs = fixCosts;
                 break;
             case "Smart":
-                costs = this.varCosts + powerConsumption;
+                costs = this.varCosts * powerConsumption;
                 break;
         }
         return costs;
